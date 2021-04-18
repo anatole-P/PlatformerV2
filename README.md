@@ -1,1 +1,1 @@
- https://anatole-p.github.io/platformer/
+ https://anatole-p.github.io/platformerV2/
