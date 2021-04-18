@@ -64,7 +64,7 @@ class Player extends Phaser.Physics.Arcade.Sprite{
     /**
      * Déplace le joueur en fonction des directions données
      */
-    move(V){
+    move(){
 
         switch (true){
             case this._directionX<0:

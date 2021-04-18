@@ -112,15 +112,15 @@ class TableauTest extends Tableau{
         this.player.setDepth(10);
 
 
-        this.araignee1 = new Araignee(this,600,height-30);
-        this.araignee2 = new Araignee(this,1400,height-64);
+        this.araignee1 = new Araignee(this,300,height-30);
+        //this.araignee2 = new Araignee(this,1400,height-64);
         this.papillon1 = new Papillon(this,500,200);
         //this.papillon2 = new Papillon(this,1300,100);
         this.rat1 = new Rat(this,400,height-20);
         //this.boostB1= new BoostB(this,100,100);
     }
 
-        update(time, delta){
+        update(time, delta,VVt){
         super.update();
         this.player.powerUp(this, time, delta);
         //le ciel se déplace moins vite que la caméra pour donner un effet paralax
@@ -135,8 +135,8 @@ class TableauTest extends Tableau{
         this.sky99.tilePositionX=this.cameras.main.scrollX;
         //this.helico1.rotation = 0.2;
 
-        this.araignee1.update();
-        this.araignee2.update();
+        this.araignee1.update(VVt);
+        //this.araignee2.update(Vt,VVt);
         this.papillon1.update();
         //this.papillon2.update();
         this.rat1.update();
